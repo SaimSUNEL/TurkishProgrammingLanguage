@@ -1,0 +1,213 @@
+
+
+Sınıf Hata
+{
+özel Karakter mesaj
+
+genel fonksiyon setmessage ( Karakter x )
+{
+mesaj = x 
+
+}
+
+genel fonksiyon getmessage ( ) 
+{
+
+sonuç mesaj
+
+}
+
+
+}
+
+
+Değişken Grubu Node
+<
+Dinamik value,
+Referans next 
+>
+
+Sınıf Stack
+{
+
+
+özel Referans root
+özel Tamsayı size
+
+genel fonksiyon push ( Referans eleman )
+{
+göster "push fonksiyonu\n"
+
+
+size == 0 doğru ise 
+<
+
+göster "Eleman eklenecek stack boş"
+
+göster "Eklenecek eleman : " + eleman
+
+Node temp
+
+temp.value = eleman
+göster "temp.value : " + temp.value + "\n"
+root -> temp
+göster "root " + root + "\n\n"
+>
+doğru değilse
+<
+Referans enson 
+
+enson -> root
+göster "enson :" + enson + "\n"
+
+enson.next != yok doğru olduğu sürece
+<
+
+enson-> enson.next
+
+>
+
+
+göster "Deneme"
+
+Node deneme
+deneme.value = eleman
+enson.next -> deneme
+>
+size = size +1 
+}
+
+genel fonksiyon pop ( ) 
+ {
+ 
+ size == 0 doğru ise <
+ Hata mesaj = yeni Hata ( ) 
+ mesaj.setmessage ( "Stackta eleman yok..." )
+ 
+ 
+ sonuç mesaj
+ 
+ >
+ 
+göster "**************pop"
+ size == 0 doğru ise 
+ <
+ sonuç yok
+ 
+ >
+
+Referans enson
+ 
+enson->root
+
+Referans temp
+ 
+ enson.next != yok doğru olduğu sürece
+ <
+ 
+temp->enson
+
+enson -> enson.next
+ 
+ >
+ 
+
+Dinamik element = enson.value
+
+temp != yok doğru ise 
+<
+göster "Temp : " + temp.value
+temp.next -> yok
+>
+ size = size - 1
+ 
+ sonuç element
+ 
+ 
+ }
+
+
+}
+
+Hata den = yeni Hata ( ) 
+den.setmessage ( "SDS" )
+göster "Message : " + den.getmessage ( ) + "\n\n"
+
+
+Karakter s = "S "
+göster "s : "  + s + "\n\n"
+
+
+Stack stack = yeni Stack ()
+
+
+stack.push ( 1 )
+stack.push ( "S" )
+stack.push ( "Denemelik" )
+stack.push ( "Deneme" )
+stack.push ( yanlış )
+hata olabilir <
+
+göster "Son son son : " + stack.pop ( ) +"\n\n"
+
+>
+hata Hata mes <
+Karakter message = mes.getmessage ( ) 
+göster "Mesaj : " + message 
+
+>
+
+göster "******eleman pop edilecek...."
+
+
+göster "Eleman : " + stack.pop ( ) + "\n\n"
+Dinamik değer = stack.pop()
+göster "elaman : "  + değer
+göster "Son eleman : " + stack.pop () 
+göster "Son son : " + stack.pop ()
+kapat
+
+
+Referans deneme 
+
+Tamsayı a = 25
+deneme->a 
+deneme != yok doğru ise
+<
+
+göster "Referans boş değil..."
+
+>
+doğru değilse 
+<
+göster "Referans Boş" 
+
+
+>
+deneme -> yok
+
+deneme != yok doğru ise
+<
+
+göster "Referans boş değil..."
+
+>
+doğru değilse 
+<
+göster "Referans Boş" 
+
+
+>
+kapat
+
+
+fonksiyon deneme ( Tamsayı k )
+{
+
+göster "Parametre : " + k  + "\n\n" 
+
+}
+
+göster 18
+deneme ( 25 )
+kapat

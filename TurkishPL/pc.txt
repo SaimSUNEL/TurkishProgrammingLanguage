@@ -1,0 +1,5 @@
+göster "Denemelik ŞÇÖÜĞÜçöüğ"
+Tamsayı SÖĞÜŞÇÜ  = 45
+
+göster "SAyı : " + SÖĞÜŞÇÜ + "\n\n"
+kapat
